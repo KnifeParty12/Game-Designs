@@ -3,7 +3,19 @@ const context = canvas.getContext('2d');
 
 context.scale(20,20);
 
+function arenaSweep() {
+  outer:  for(let y =arena.length-1; y >0; --y){
+        for(let x =0; x<arena[y].length; x++){
+            if(arena[y][x] === 0){
+                continue outer;
+            }
+        }
 
+      const row =  arena.splice(y, 1)[0].fill(0); // This line takes arena row out at index y then fills it with 0's,then later we put it at top
+        arena.unshift(row);
+    ++y;
+  }
+}
 
 function collide(arena,player) {
     const [m, o] = [player.matrix, player.pos];
@@ -125,6 +137,7 @@ function playerDrop(){
         player.pos.y--;
         merge(arena,player);
         playerReset();
+        arenaSweep();
     }
     dropCounter = 0;
 }
@@ -199,15 +212,19 @@ function update(time = 0) {
     requestAnimationFrame(update)
 }
 
+function updateScore() {
+    document.getElementById('score').innerText = player.score;
+}
+
 const colors = [
     null,
-    'red',
-    'blue',
-    'violet',
-    'green',
-    'yellow',
-    'orange',
-    'pink',
+    '#FF0D72',
+    '#0DC2FF',
+    '#0DFF72',
+    '#F538FF',
+    '#FF8E0D',
+    '#FFE138',
+    '#3877FF',
 ];
 
 
