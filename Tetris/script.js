@@ -4,6 +4,8 @@ const context = canvas.getContext('2d');
 context.scale(20,20);
 
 function arenaSweep() {
+
+    let rowCount = 1;
   outer:  for(let y =arena.length-1; y >0; --y){
         for(let x =0; x<arena[y].length; x++){
             if(arena[y][x] === 0){
@@ -14,6 +16,9 @@ function arenaSweep() {
       const row =  arena.splice(y, 1)[0].fill(0); // This line takes arena row out at index y then fills it with 0's,then later we put it at top
         arena.unshift(row);
     ++y;
+
+    player.score += rowCount * 10;
+    rowCount *=2;
   }
 }
 
@@ -231,9 +236,9 @@ const colors = [
 const arena = createMatrix(12, 20);
 
 const player = {
-    pos: {x: 5, y: 5},
-    matrix: createPiece('T'),
-
+    pos: {x: 0, y: 0},
+    matrix: null,
+    score: 0,
 };
 
 document.addEventListener('keydown', event =>{
@@ -254,4 +259,5 @@ document.addEventListener('keydown', event =>{
    }
 });
 
+playerReset();
 update();
