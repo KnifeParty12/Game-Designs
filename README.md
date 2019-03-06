@@ -4,7 +4,7 @@
 
 ------------------------------------------------------------
 
-1. ### Tetris (Single Player)
+  ## Tetris (Single Player)
   
   > Developed Using Javascript functions and Matrices depicting the game pieces.Currently I am hoping to refactor my code,to integrate
   2 player system and work on some existing glitches pointed out by colleagues.
@@ -22,7 +22,7 @@
   
   -----------------------------------------------------------
   
-  2. ### Memory Game.
+   ## Memory Game.
   
   > Project developed in vanilla javascript.No frameworks or libraries, definitely no jQuery.
 
