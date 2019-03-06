@@ -61,8 +61,8 @@ function createPiece(type) {  //https:// Source For Pieces:: medium.com/@markmli
     else if (type === 'L'){
         return [
             [0,3,0],
-            [0,3,1],
-            [0,3,1],
+            [0,3,3],
+            [0,3,3],
 
         ];
     }
@@ -94,7 +94,7 @@ function createPiece(type) {  //https:// Source For Pieces:: medium.com/@markmli
     }
     else if (type === 'Z'){
         return [
-            [7,7,7],
+            [7,7,0],
             [0,7,7],
             [0,0,0],
 
