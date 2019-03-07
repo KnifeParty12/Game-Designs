@@ -6,6 +6,8 @@
 
   ## Tetris (Single Player)
   
+  > [Check it out !](Tetris/index.html)
+  
   > Developed Using Javascript functions and Matrices depicting the game pieces.Currently I am hoping to refactor my code,to integrate
   2 player system and work on some existing glitches pointed out by colleagues.
 
@@ -23,6 +25,8 @@
   -----------------------------------------------------------
   
    ## Memory Game.
+  
+  > [Check it out !](Memory Card Game/index.html)
   
   > Project developed in vanilla javascript.No frameworks or libraries, definitely no jQuery.
 
