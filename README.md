@@ -18,7 +18,7 @@
   5. Handling keyboard input.
  
  
-  <img src = "Images/Tetris1.png">
+  <img src = "Images/tetris1.gif">
   
   -----------------------------------------------------------
   
