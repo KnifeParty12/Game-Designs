@@ -26,7 +26,7 @@
   
    ## Memory Game.
   
-  > [Check it out !](Memory Card Game/index.html)
+  > [Check it out !](Memory%20Card%20Game/index.html)
   
   > Project developed in vanilla javascript.No frameworks or libraries, definitely no jQuery.
 
