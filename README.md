@@ -2,7 +2,7 @@
 
 > **Provided below are the projects that I developed during my college years using JavaScript(ES5+ES6),Hope you like them**
 
->Deployment :arrow_right: [Github pages](https://knifeparty12.github.io/JS-Projects/)
+> ## Deployment :: [Github pages](https://knifeparty12.github.io/Game-Designs/)
 ------------------------------------------------------------
 
   ## Tetris (Single Player)
