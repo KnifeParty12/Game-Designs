@@ -1,0 +1,23 @@
+{
+  "name": "JS-Projects",
+  "version": "1.0.0",
+  "description": "> **Provided below are the projects that I developed during my college years using JavaScript(ES5+ES6),Hope you like them**",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KnifeParty12/Game-Designs-JS-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KnifeParty12/Game-Designs-JS-/issues"
+  },
+  "homepage": "https://KnifeParty12.github.io/Game-Designs",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
